@@ -15,7 +15,7 @@ void visualizzaMappa(char mappa[MAX_RIGHE][MAX_COLONNE], MappaInfo info,
 void aggiungiOstacoli(char mappa[MAX_RIGHE][MAX_COLONNE], MappaInfo info,
                       int nrOstacoli);
 
-#if VERSIONE > 2
+#if VERSIONE >= 2
 void aggiungiChiave(char mappa[MAX_RIGHE][MAX_COLONNE], MappaInfo info);
 #endif
 

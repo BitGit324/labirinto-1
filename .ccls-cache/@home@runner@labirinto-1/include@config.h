@@ -1,7 +1,7 @@
 #ifndef CONFIG_H
 #define CONFIG_H
 // VERSIONE
-#define VERSIONE 1
+#define VERSIONE 3
 // configurazione mappa
 #define MAX_RIGHE 30
 #define MAX_COLONNE 30
@@ -13,13 +13,13 @@
 #define DEFAULT_OSTACOLI 15
 
 #if VERSIONE == 3
-#define DEFAULT_BONUS 30
+#define DEFAULT_BONUS 4
 #define DEFAULT_PUNTI 1050
 #define VALORE_BONUS 500
 #define DECREMENTO_PASSO 50
 #endif
 // configurazione salvataggio
 #define MAX_PERCORSO (MAX_RIGHE * MAX_COLONNE)
-#define NOMEFILE "../salvataggi/percorso.txt"
+#define NOMEFILE "percorso.txt"
 
 #endif // CONFIG_H

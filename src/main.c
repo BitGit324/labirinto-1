@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <time.h>
 
-#ifndef STRUTTURE_H //se non è gia definito STRUTTURE_H
+#ifndef STRUTTURE_H // se non è gia definito STRUTTURE_H
 #include "../include/strutture.h"
 #endif
 
@@ -122,6 +122,7 @@ int main() {
     aggiungiOstacoli(mappa, info, nrOstacoli);
 
 #if VERSIONE >= 2
+    //aggiungo la chiave alla mappa
     aggiungiChiave(mappa, info);
 #endif
 
@@ -154,6 +155,7 @@ int main() {
 
       visualizzaMappa(mappa, info, nebbia);
 
+      //stampo chiave
 #if VERSIONE == 2
       if (info.chiave == 0) {
         printf("NON HAI ANCORA TROVATO LA CHIAVE\n");
@@ -161,7 +163,7 @@ int main() {
         printf("dirigiti all'uscita\n");
       }
 #endif
-#if VERSIONE == 3
+#if VERSIONE == 3   //stampo puinteggio e chiave
       if (info.chiave == 0) {
         printf("NON HAI ANCORA TROVATO LA CHIAVE  !!!!       PUNTI:   %d\n",
                info.punti);
@@ -173,7 +175,6 @@ int main() {
       strada[ultimoPasso].y = info.rY;
 
       // se il robottino è sopra l'uscita
-      // chiave
       if (mappa[info.rY][info.rX] == 'E') {
 
 #if VERSIONE >= 2
@@ -196,8 +197,8 @@ int main() {
       } else {
 #if VERSIONE >= 2
         if (mappa[info.rY][info.rX] == 'C') {
-          info.chiave = 1;
-          mappa[info.rY][info.rX] = '.';
+          info.chiave = 1;//chiave nell'inventario
+          mappa[info.rY][info.rX] = '.'; //raccolgo la chiave
           visualizzaMappa(mappa, info, nebbia);
           printf("HAI TROVATO LA CHIAVE! ora scappa dal labirinto\n");
         }
