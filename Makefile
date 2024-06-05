@@ -5,8 +5,8 @@ CC=gcc
 CFLAGS=-Iinclude
 
 # Nome del file eseguibile
-#TARGET=labirinto
-TARGET=main  #su replit il tasto run cerca l'eseguibile main
+TARGET=labirinto
+#TARGET=main  #su replit il tasto run cerca l'eseguibile main
 
 # Regola per costruire l'eseguibile
 $(TARGET): main.o mappa.o salvataggio.o strutture.o config.o
