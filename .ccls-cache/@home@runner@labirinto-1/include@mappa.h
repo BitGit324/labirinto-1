@@ -20,9 +20,9 @@ void aggiungiChiave(char mappa[MAX_RIGHE][MAX_COLONNE], MappaInfo info);
 #endif
 
 #if VERSIONE == 3
-void aggiungiBonus(char mappa[MAX_RIGHE][MAX_COLONNE], MappaInfo info, int nrBonus);
+void aggiungiBonus(char mappa[MAX_RIGHE][MAX_COLONNE], MappaInfo info,
+                   int nrBonus);
 #endif
-
 
 void creaMappa(char mappa[MAX_RIGHE][MAX_COLONNE], MappaInfo info);
 

@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <time.h>
 
-#ifndef STRUTTURE_H
+#ifndef STRUTTURE_H //se non è gia definito STRUTTURE_H
 #include "../include/strutture.h"
 #endif
 
@@ -158,14 +158,15 @@ int main() {
       if (info.chiave == 0) {
         printf("NON HAI ANCORA TROVATO LA CHIAVE\n");
       } else {
-         printf("dirigiti all'uscita\n");
+        printf("dirigiti all'uscita\n");
       }
 #endif
 #if VERSIONE == 3
       if (info.chiave == 0) {
-        printf("NON HAI ANCORA TROVATO LA CHIAVE  !!!!       PUNTI:   %d\n", info.punti);
+        printf("NON HAI ANCORA TROVATO LA CHIAVE  !!!!       PUNTI:   %d\n",
+               info.punti);
       } else {
-         printf("dirigiti all'uscita  ||||      PUNTI:   %d\n", info.punti);
+        printf("dirigiti all'uscita  ||||      PUNTI:   %d\n", info.punti);
       }
 #endif
       strada[ultimoPasso].x = info.rX;

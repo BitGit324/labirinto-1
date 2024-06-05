@@ -6,7 +6,7 @@
 #define MAX_RIGHE 30
 #define MAX_COLONNE 30
 #define MAX_OSTACOLI 25
-#define MAX_BONUS 25 // tbd
+#define MAX_BONUS 25
 // configurazione partita
 #define DEFAULT_RIGHE 15
 #define DEFAULT_COLONNE 15
